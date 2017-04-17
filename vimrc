@@ -665,7 +665,8 @@ endif
 set background=dark
 set t_Co=256
 
-colorscheme solarized
+colorscheme gruvbox
+" colorscheme solarized
 " colorscheme molokai
 " colorscheme desert
 
