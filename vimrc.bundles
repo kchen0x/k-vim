@@ -140,6 +140,9 @@ Plug 'altercation/vim-colors-solarized'
 " molokai
 " 主题 molokai
 Plug 'tomasr/molokai'
+" gruvbox
+" 主题 gruvbox
+Plug 'morhetz/gruvbox'
 
 
 " nav
