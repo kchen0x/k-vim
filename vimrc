@@ -664,6 +664,7 @@ endif
 " theme主题
 set background=dark
 set t_Co=256
+let g:gruvbox_invert_selection = 0
 
 colorscheme gruvbox
 " colorscheme solarized
