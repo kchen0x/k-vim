@@ -46,7 +46,7 @@ molokai主题
 ### 1. clone 到本地
 
 ```
-git clone https://github.com/wklken/k-vim.git
+git clone -b kchen git@github.com:quentin-chen/k-vim.git
 ```
 
 
