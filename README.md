@@ -1,29 +1,21 @@
-k-vim
-=======================
+# k-vim
 
-
-> VERSION: 9.2
-
-> LAST_UPDATE_TIME: 2017-07-29
-
-> 本次更新: 小版本更新, 支持vim8异步语法检查
-
-详细 [更新日志](https://github.com/wklken/k-vim/wiki/UPDATE_LOG)
-
-# 目标
+## 目标
 
 > Just a Better Vim Config. Keep it Simple.
 
+当前 kchen 分支是我从 @wklken 那儿 Fork 过来之后修改的版本，具体修改如下：
+
+1. 为 vim 增加 gruvbox 配色
+2. 为 airline 增加 gruvbox 配色
+3. 关闭 airline 的 tabline
+4. 取消 # 和 * 的交换
 
 **PS**: 服务器端无插件`k-vim`简化版本(curl直接设置vimrc即可)[vim-for-server](https://github.com/wklken/vim-for-server)
 
-**PPS**: 一份tmux配置 [k-tmux](https://github.com/wklken/k-tmux)
+**PPS**: 一份tmux配置 [k-tmux](https://github.com/kchen0x/k-tmux)
 
----------------------------------
-
----------------------------------
-
-# 截图
+## 截图
 
 solarized主题
 
@@ -33,28 +25,23 @@ molokai主题
 
 ![molokai](https://github.com/wklken/gallery/blob/master/vim/molokai.png?raw=true)
 
----------------------------------
----------------------------------
-
-# 安装步骤
+## 安装步骤
 
 ### 1. clone 到本地
 
 ```
-git clone -b kchen git@github.com:quentin-chen/k-vim.git
+git clone -b kchen git@github.com:kchen0x/k-vim.git
 ```
-
 
 ### 2. 安装依赖包
 
-
-##### 2.1 系统依赖 # ctags, ag(the_silver_searcher)
+#### 2.1 系统依赖 # ctags, ag(the_silver_searcher)
 
 ```
 # ubuntu
-sudo apt-get install ctags
-sudo apt-get install build-essential cmake python-dev  #编译YCM自动补全插件依赖
-sudo apt-get install silversearcher-ag
+sudo apt install ctags
+sudo apt install build-essential cmake python-dev  # 编译YCM自动补全插件依赖
+sudo apt install silversearcher-ag
 
 # centos
 sudo yum install python-devel.x86_64
@@ -66,38 +53,40 @@ sudo yum install cmake
 # mac
 brew install ctags
 brew install the_silver_searcher
+brew install cmake # 编译YCM自动补全插件依赖
 ```
 
-##### 2.2 使用Python
+#### 2.2 使用Python
 
 ```
 sudo pip install flake8 yapf
 ```
 
-##### 2.3 如果使用Javascript(不需要的跳过)
+#### 2.3 如果使用Javascript(不需要的跳过)
 
 ```
 # 安装jshint和jslint,用于javascript语法检查
 # 需要nodejs支持,各个系统安装见文档 https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager
 
 # ubuntu
-sudo apt-get install nodejs npm
+sudo apt-get install nodejs npm # 如已安装可略过
 sudo npm install -g jslint
 sudo npm install jshint -g
 sudo npm install -g eslint eslint-plugin-standard eslint-plugin-promise eslint-config-standard eslint-plugin-import eslint-plugin-node eslint-plugin-html babel-eslint
 
 # mac
-brew install node
+brew install node # 如已安装可略过
 npm install jshint -g
 npm install jslint -g
 npm install -g eslint eslint-plugin-standard eslint-plugin-promise eslint-config-standard eslint-plugin-import eslint-plugin-node eslint-plugin-html babel-eslint
 ```
 
-
 ### 3. 安装
 
 ```
 进入目录, 执行安装
+# 如果使用 NeoVim 可以指定 --for-neovim 参数
+# 如果想要同时为 Vim 和 NeoVim 安装，可以指定 --for-all 参数
 # 注意原先装过的童鞋, 重装时，不要到~/.vim下执行(这是软连接指向k-vim真是目录)，必须到k-vim原生目录执行
 # 会进入安装插件的列表，一安装是从github clone的，完全取决于网速, 之后会自动编译 YCM, 编译失败的话需要手动编译, 有问题见YCM文档
 # 如果发现有插件安装失败 可以进入vim, 执行`:PlugInstall'
@@ -106,27 +95,23 @@ cd k-vim/
 sh -x install.sh
 ```
 
-------------------------
-------------------------
+---
 
-# 移除安装
+## 移除安装
 
 ```
 cd ~ && rm -rf .vim .vimrc .vimrc.bundles && cd -
 ```
 
----------------------------------
----------------------------------
+---
 
-# 常见问题
+## 常见问题
 
 详见 [wiki](https://github.com/wklken/k-vim/wiki) 以及  [issues](https://github.com/wklken/k-vim/issues)
 
+---
 
-------------------------
-------------------------
-
-# 插件
+## 插件
 
 ### 选择安装插件集合
 
@@ -162,11 +147,9 @@ let g:bundle_groups=['python', 'javascript', 'markdown', 'html', 'css', 'tmux', 
 
 说明/演示/自定义快捷键等, 待处理
 
-------------------------
-------------------------
+---
 
-
-# 自定义快捷键
+## 自定义快捷键
 
 ```
 注意, 以下 ',' 代表<leader>
@@ -278,8 +261,7 @@ ctrl+n    相对/绝对行号切换
     14. Python使用#进行注释时, 自动缩进
 ```
 
-------------------------
-------------------------
+---
 
 ### UPDATE_LOG
 
