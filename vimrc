@@ -19,6 +19,12 @@
 "       -> 插件配置和具体设置在vimrc.bundles中
 " Note: Don't put anything in your .vimrc you don't understand!
 "==========================================
+" Modifier: kchen0x
+" Version: 9.1.1
+" Email: kchen0x@gmail.com
+" BlogPost: http://kchen.cc
+" Last_modify: 2018-10-20
+"==========================================
 
 "==========================================
 " Initial Plugin 加载插件
