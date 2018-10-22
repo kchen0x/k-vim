@@ -29,7 +29,7 @@ call plug#begin('~/.vim/bundle')
 
 " 移动光标到插件名上, 使用'*'快速跳转到每个插件的配置处
 
-" syntastic
+" syntastic 语法检查被动技能，特定语言需配合相应检查器使用，配置见后方
 if v:version < 800
     Plug 'scrooloose/syntastic'
 else
@@ -39,32 +39,35 @@ endif
 " Group dependencies, vim-snippets depends on ultisnips
 " 代码片段快速插入 (snippets中,是代码片段资源,需要学习)
 " Snippets are separated from the engine. Add this if you want them:
-Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+" Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 
 " auto complete
 " 代码自动补全
 " 迄今为止用到的最好的自动VIM自动补全插件
 " 重启 :YcmRestartServer
-Plug 'Valloric/YouCompleteMe'
+" Plug 'Valloric/YouCompleteMe'
+
 " 自动补全单引号，双引号等
 Plug 'Raimondi/delimitMate'
+
 " 自动补全html/xml标签
-Plug 'docunext/closetag.vim', { 'for': ['html', 'xml'] }
+" Plug 'docunext/closetag.vim', { 'for': ['html', 'xml'] }
 
 " quick edit
 " 快速注释
 Plug 'scrooloose/nerdcommenter'
 
-
 " 快速加入修改环绕字符
 " for repeat -> enhance surround.vim, . to repeat command
 Plug 'tpope/vim-repeat' | Plug 'tpope/vim-surround'
+
 " trailingwhitespace
 " 快速去行尾空格 [, + <Space>]
 Plug 'bronson/vim-trailing-whitespace'
+
 " easyalign
 " 快速赋值语句对齐
-Plug 'junegunn/vim-easy-align'
+" Plug 'junegunn/vim-easy-align'
 
 " quick movement
 " easymotion
@@ -75,7 +78,8 @@ Plug 'Lokaltog/vim-easymotion'
 " quickscope
 Plug 'unblevable/quick-scope'
 
-Plug 'vim-scripts/matchit.zip'
+" Plug 'vim-scripts/matchit.zip'
+
 " signature
 " 显示marks - 方便自己进行标记和跳转
 " m[a-zA-Z] add mark
@@ -88,16 +92,18 @@ Plug 'kshenoy/vim-signature'
 " quick selection and edit
 " expandregion
 " 选中区块
-Plug 'terryma/vim-expand-region'
+" Plug 'terryma/vim-expand-region'
+
 " 多光标选中编辑
 " multiplecursors
 Plug 'terryma/vim-multiple-cursors'
 
-" quick locate file or function
+" quick locate file or function <,p> <,f>
 " 文件搜索
 " change to https://github.com/ctrlpvim/ctrlp.vim
 " ctrlp ctrlpfunky
 Plug 'ctrlpvim/ctrlp.vim' | Plug 'tacahiroy/ctrlp-funky'
+
 " ctrlsf
 " 类似sublimetext的搜索
 " In CtrlSF window:
@@ -106,40 +112,49 @@ Plug 'ctrlpvim/ctrlp.vim' | Plug 'tacahiroy/ctrlp-funky'
 " T - Lkie t but focus CtrlSF window instead of opened new tab.
 " q - Quit CtrlSF window.
 Plug 'dyng/ctrlsf.vim'
+
 " incsearch
 " Plug 'haya14busa/incsearch.vim'
 " map /  <Plug>(incsearch-forward)
 " map ?  <Plug>(incsearch-backward)
 " map g/ <Plug>(incsearch-stay)
 
-" quick run
+" quick run <,r>
 " quickrun
 Plug 'thinca/vim-quickrun'
 
 " git
-" fugitive
+" fugitive <,ge>
 Plug 'tpope/vim-fugitive'
-" gitgutter
+" gitgutter <,gs>
 Plug 'airblade/vim-gitgutter'
 
 " gundo
-" edit history, 可以查看回到某个历史状态
-Plug 'sjl/gundo.vim'
+" edit history, 可以查看回到某个历史状态 <,h>
+" Plug 'sjl/gundo.vim'
+
+" undotree
+" replacement of gundo, <,h>
+Plug 'mbbill/undotree'
 
 " view
 " airline
 " 状态栏增强展示
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+
 " rainbow_parentheses
 " 括号显示增强
 Plug 'kien/rainbow_parentheses.vim'
+
 " 主题 solarized
 " solarized
 Plug 'altercation/vim-colors-solarized'
+
 " molokai
 " 主题 molokai
 Plug 'tomasr/molokai'
+
 " gruvbox
 " 主题 gruvbox
 Plug 'morhetz/gruvbox'
@@ -663,8 +678,8 @@ endif
     nnoremap <leader>gs :GitGutterToggle<CR>
 " }}}
 
-" gundo {{{
-    noremap <leader>h :GundoToggle<CR>
+" undotree {{{
+    noremap <leader>h :UndotreeToggle<CR>
 " }}}
 
 " ################### 显示增强 ###################
