@@ -30,7 +30,10 @@ molokai主题
 ### 1. clone 到本地
 
 ```
-git clone -b kchen git@github.com:kchen0x/k-vim.git
+# Clone the repo to you ~/opt or ~/Projects as source dir.
+# Do NOT delete the source dir when installation completed.
+
+git clone -b kchen https://github.com/kchen0x/k-vim.git
 ```
 
 ### 2. 安装依赖包
