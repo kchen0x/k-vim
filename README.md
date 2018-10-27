@@ -10,6 +10,8 @@
 2. 为 airline 增加 gruvbox 配色
 3. 关闭 airline 的 tabline
 4. 取消 # 和 * 的交换
+5. 移除了部分用不着的插件
+6. 移除了 YouCompleteMe，这个插件太重，导致 vim 异常消耗资源
 
 **PS**: 服务器端无插件`k-vim`简化版本(curl直接设置vimrc即可)[vim-for-server](https://github.com/wklken/vim-for-server)
 
@@ -17,13 +19,9 @@
 
 ## 截图
 
-solarized主题
+gruvbox-dark 主题
 
-![solarized](https://github.com/wklken/gallery/blob/master/vim/solarized.png?raw=true)
-
-molokai主题
-
-![molokai](https://github.com/wklken/gallery/blob/master/vim/molokai.png?raw=true)
+![](http://data.kchen.cc/mac_af-76c14f5487decd6608aa941630209855.png-origin)
 
 ## 安装步骤
 
