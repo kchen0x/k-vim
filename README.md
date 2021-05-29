@@ -15,7 +15,7 @@
 7. 默认需要 wrap 换行
 8. 开启错误提示音
 
-**PS**: 服务器端无插件`k-vim`简化版本(curl直接设置vimrc即可)[vim-for-server](https://github.com/wklken/vim-for-server)
+**PS**: 服务器端无插件`k-vim`简化版本(curl直接设置vimrc即可)[vim-for-server](https://github.com/wklken/vim-for-server) / vscode-vim配置(尽量一致的键位) [k-vim-vscode](https://github.com/wklken/k-vim-vscode)
 
 **PPS**: 一份tmux配置 [k-tmux](https://github.com/kchen0x/k-tmux)
 
