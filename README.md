@@ -13,7 +13,7 @@
 5. 移除了部分用不着的插件
 6. 移除了 YouCompleteMe，这个插件太重，导致 vim 异常消耗资源
 
-**PS**: 服务器端无插件`k-vim`简化版本(curl直接设置vimrc即可)[vim-for-server](https://github.com/wklken/vim-for-server)
+**PS**: 服务器端无插件`k-vim`简化版本(curl直接设置vimrc即可)[vim-for-server](https://github.com/wklken/vim-for-server) / vscode-vim配置(尽量一致的键位) [k-vim-vscode](https://github.com/wklken/k-vim-vscode)
 
 **PPS**: 一份tmux配置 [k-tmux](https://github.com/kchen0x/k-tmux)
 
