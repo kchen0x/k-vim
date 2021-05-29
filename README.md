@@ -12,6 +12,8 @@
 4. 取消 # 和 * 的交换
 5. 移除了部分用不着的插件
 6. 移除了 YouCompleteMe，这个插件太重，导致 vim 异常消耗资源
+7. 默认需要 wrap 换行
+8. 开启错误提示音
 
 **PS**: 服务器端无插件`k-vim`简化版本(curl直接设置vimrc即可)[vim-for-server](https://github.com/wklken/vim-for-server)
 
